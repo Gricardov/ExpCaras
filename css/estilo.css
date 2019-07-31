@@ -1,0 +1,92 @@
+body{
+	width: 100%;
+	height: auto;
+	cursor: -webkit-grab;
+	cursor: grab;
+	/*background-image: url("../img/fondo.png");*/
+	  background-color: white;
+	  height: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  /*position: relative;*/
+
+}
+
+#marco{
+/* Primero, muestro todo vacío para que el usuario pueda iniciar */
+display:none;
+width: 100%;
+height: auto;
+float:left;
+cursor: -webkit-grab;
+cursor: grab;
+
+/* Para que el texto no se pueda seleccionar*/
+-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */	
+	
+}
+
+#marco:active{
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+#imgprincipal{
+width: 395px;
+height: 510px;
+float:left;
+margin-left: 35%;
+margin-top: 9%;
+cursor: -webkit-grab;
+cursor: grab;
+}
+
+#resumen{
+	width: auto;
+	height: auto;
+	display:none;
+	float:left;
+	margin-left: 25%;
+	margin-top: 1px;
+	cursor: -webkit-grab;
+	cursor: grab;
+
+}
+
+.ruleta{
+/*395 510*/
+width:170px;
+height:235px;
+margin:10px auto;
+display:block;
+}
+
+.c{
+	
+	margin-left: 30%;
+}
+
+.d{
+
+	margin-right: 30%;
+
+}
+
+#caramostrada{
+	
+	width:170px;
+	height:235px;
+	margin:10px auto;
+	position:absolute;
+	top:2%;
+	left:26%;
+	display:none;
+	z-index:2;
+}

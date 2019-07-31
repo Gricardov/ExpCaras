@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	
+	<!-- El estilo -->
+	<link rel="stylesheet" href="css/estilo.css"/>
+	
+	<!-- El FileSaver con su Blob para guardar texto -->
+	<script src='js/Blob.js'></script>
+	<script src='js/Filesaver.min.js'></script>
+	
+	<!-- JQuery -->
+	<script src='js/jquery-3.3.1.js' type='text/javascript'></script>
+	<script src='js/jquery-ui.js' type='text/javascript'></script>
+	<script src='js/jquery-ui.min.js'></script>
+	
+	<!-- El script -->	
+	<script src='js/script.js' type='text/javascript'></script>
+	
+</head>
+
+<body>
+
+<!-- La ventana de inicio -->
+
+<div id="inicio" class="text-center">
+
+<h1 class="text-center" style="margin-top:15%">Bienvenido al experimento de las caras</h1><br>
+<h3>Presiona el botón para iniciar</h3>
+<button id="btnIniciar" type="button" class="btn btn-primary btn-lg" style="margin-top:20px;">Iniciar</button>
+
+</div>
+
+<!-- La ventana de fin -->
+
+<div id="fin" class="text-center" style="display:none;">
+
+<h1 class="text-center" style="margin-top:15%;">Gracias por tu participación</h1><br>
+<h3 class="text-center" style="margin-top:10px; display:inline;">Avísa a los encargados y no cierres esta ventana</h3><br>
+<button id="descarga" class="btn btn-primary btn-lg" style="margin-top:20px;">Descargar resultados</button>
+</div>
+
+<div id="marco" oncontextmenu="return false">
+
+<img id="imgprincipal" src="img/11.png" draggable="false"/>
+<div id="resumen">
+<table>
+<tr>
+<td></td>
+<td colspan="2"><img id="A" src="img/1A.png" class="ruleta" draggable="false"></td>
+<td></td>
+</tr>
+
+<tr>
+<td><img id="E" src="img/1E.png" class="ruleta" draggable="false"></td>
+<td colspan="2" style="position:relative;">
+
+<img id="FONDO" src="img/VERDE.png" style="position:relative; z-index:1" class="ruleta" draggable="false">
+<img id="caramostrada" src="img/VERDE.png" draggable="false">
+
+</td>
+<td><img id="B" src="img/1B.png" class="ruleta" draggable="false"></td>
+</tr>
+
+<tr>
+<td></td>
+<td><img id="D" src="img/1D.png" class="ruleta d" draggable="false"></td>
+<td><img id="C" src="img/1C.png" class="ruleta c" draggable="false"></td>
+<td></td>
+</tr>
+</table>
+
+</div>
+</div>
+
+</body>
+
+</html>
